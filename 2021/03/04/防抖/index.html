@@ -6,15 +6,15 @@
   
   <title>变防抖 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="防抖防抖是啥？不知道 防抖的作用在进行窗口的resize、scroll，输入框内容校验等操作时，如果事件处理函数调用的频率无限制，会加重浏览器的负担，导致用户体验非常糟糕。此时我们可以采用防抖减少调用频率，同时又不影响实际效果。（频繁触发，只执行一次） 防抖的实现123456789function debounce(callback, time) &amp;#123;    let timer &#x3D; nul">
+  <meta name="description" content="防抖">
 <meta property="og:type" content="article">
 <meta property="og:title" content="变防抖">
 <meta property="og:url" content="http://example.com/2021/03/04/%E9%98%B2%E6%8A%96/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="防抖防抖是啥？不知道 防抖的作用在进行窗口的resize、scroll，输入框内容校验等操作时，如果事件处理函数调用的频率无限制，会加重浏览器的负担，导致用户体验非常糟糕。此时我们可以采用防抖减少调用频率，同时又不影响实际效果。（频繁触发，只执行一次） 防抖的实现123456789function debounce(callback, time) &amp;#123;    let timer &#x3D; nul">
+<meta property="og:description" content="防抖">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-03-04T08:03:00.000Z">
-<meta property="article:modified_time" content="2021-04-02T13:13:55.576Z">
+<meta property="article:modified_time" content="2021-04-02T13:33:57.887Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="博客           &#x2F;&#x2F;多个标签可以这样添加">
 <meta property="article:tag" content="hexo">
@@ -101,7 +101,9 @@
     
     <div class="e-content article-entry" itemprop="articleBody">
       
-        <h1 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h1><h2 id="防抖是啥？"><a href="#防抖是啥？" class="headerlink" title="防抖是啥？"></a>防抖是啥？</h2><p>不知道</p>
+        <h1 id="防抖"><a href="#防抖" class="headerlink" title="防抖"></a>防抖</h1><span id="more"></span>
+
+<h2 id="防抖是啥？"><a href="#防抖是啥？" class="headerlink" title="防抖是啥？"></a>防抖是啥？</h2><p>不知道</p>
 <h2 id="防抖的作用"><a href="#防抖的作用" class="headerlink" title="防抖的作用"></a>防抖的作用</h2><p>在进行窗口的resize、scroll，输入框内容校验等操作时，如果事件处理函数调用的频率无限制，会加重浏览器的负担，导致用户体验非常糟糕。此时我们可以采用防抖减少调用频率，同时又不影响实际效果。（频繁触发，只执行一次）</p>
 <h2 id="防抖的实现"><a href="#防抖的实现" class="headerlink" title="防抖的实现"></a>防抖的实现</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">debounce</span>(<span class="params">callback, time</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">let</span> timer = <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (timer) <span class="built_in">clearTimeout</span>(timer);</span><br><span class="line">        timer = <span class="built_in">setTimeout</span>( <span class="function">() =&gt;</span> &#123;</span><br><span class="line">            callback(e);</span><br><span class="line">        &#125;,time);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
