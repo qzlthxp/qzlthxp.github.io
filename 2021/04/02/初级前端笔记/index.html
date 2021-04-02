@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="web模板基本结构 html标签是由&lt;&gt;包围的关键词 html标签通常成对出现，分为标签开头和标签结尾。（） 有部分标签是没有结束标签的，为单标签，单标签必须使用&#x2F;结尾。（ ） 页面所有的内容，都在html标签中 html标签分为三部分：标签名称，标签内容，标签属性 html标签具有语义化，可通过标签名能够判断出该标签的内容，语义化的作用是网页结构层次更清晰，更容易被搜索引擎收录，更容">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/04/02/%E5%88%9D%E7%BA%A7%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="web模板基本结构 html标签是由&lt;&gt;包围的关键词 html标签通常成对出现，分为标签开头和标签结尾。（） 有部分标签是没有结束标签的，为单标签，单标签必须使用&#x2F;结尾。（ ） 页面所有的内容，都在html标签中 html标签分为三部分：标签名称，标签内容，标签属性 html标签具有语义化，可通过标签名能够判断出该标签的内容，语义化的作用是网页结构层次更清晰，更容易被搜索引擎收录，更容">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-04-02T13:07:31.640Z">
+<meta property="article:modified_time" content="2021-02-13T04:29:02.365Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-初级前端笔记" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/04/02/%E5%88%9D%E7%BA%A7%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" class="article-date">
+  <time class="dt-published" datetime="2021-04-02T13:07:31.640Z" itemprop="datePublished">2021-04-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="web模板"><a href="#web模板" class="headerlink" title="web模板"></a>web模板</h1><h2 id="基本结构"><a href="#基本结构" class="headerlink" title="基本结构"></a>基本结构</h2><ol>
+<li>html标签是由&lt;&gt;包围的关键词</li>
+<li>html标签通常成对出现，分为标签开头和标签结尾。（<div></div><p></p>）</li>
+<li>有部分标签是没有结束标签的，为单标签，单标签必须使用/结尾。（<img /> <input />）</li>
+<li>页面所有的内容，都在html标签中</li>
+<li>html标签分为三部分：标签名称，标签内容，标签属性</li>
+<li>html标签具有语义化，可通过标签名能够判断出该标签的内容，语义化的作用是网页结构层次更清晰，更容易被搜索引擎收录，更容易让屏幕阅读器读出网页内容</li>
+<li>标签的内容是在一对标签内部的内容</li>
+<li>标签的内容可以是其他标签</li>
+</ol>
+<h2 id="标签属性"><a href="#标签属性" class="headerlink" title="标签属性"></a>标签属性</h2><ol>
+<li><code>class</code>属性：用于定义元素的类名</li>
+<li>id属性：用于指定元素的唯一id，该属性的值在整个html文档中具有唯一性</li>
+<li>style属性：用于指定元素的行内样式，使用该属性将会覆盖任何全局的样式设定</li>
+<li>title属性：用于指定鼠标悬停在标签内容时，显示的信息</li>
+<li>accesskey属性：用于指定激活元素的快捷键</li>
+<li>tabindex属性：用于指定元素在 tab 键下的次序</li>
+<li>dir属性：用于指定元素中内容的文本方向，属性只有 ltr 或 rtl 两种。</li>
+<li>lang属性：用于指定元素内容的语言</li>
+</ol>
+<h2 id="事件属性"><a href="#事件属性" class="headerlink" title="事件属性"></a>事件属性</h2><ol>
+<li><p>window窗口事件，onload，在网页加载结束之后触发，onunload，在用户从网页离开时发生（点击跳转，页面重载，关闭浏览器窗口等）</p>
+</li>
+<li><p>from表单事件，onblur，当元素失去焦点时触发，onchange，在元素的值被改变时触发，onfocus，当元素获取焦点时触发，onreset，当表单重置按钮被点击时触发，onselect，在元素中文本被选中后触发，onsubmit，在提交表单时触发</p>
+</li>
+<li><p>keyboard键盘事件，onkeydown，在用户按下按键时触发，onkeypress，在用户按下按键后，按着按键时触发，该属性不会对所有按键生效，不生效的有，alt，ctrl，shift，esc</p>
+</li>
+<li><p>mouse鼠标事件</p>
+<table>
+<thead>
+<tr>
+<th>事件名称</th>
+<th align="left">触发条件</th>
+<th align="left">影响</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>onclick</td>
+<td align="left">当在元素上发生鼠标点击时触发</td>
+<td align="left">点击子元素，事件会冒泡到父元素</td>
+</tr>
+<tr>
+<td>ondblclick</td>
+<td align="left">当在元素上发生鼠标双击时触发</td>
+<td align="left">双击子元素，事件会冒泡到父元素</td>
+</tr>
+<tr>
+<td>onmousedown</td>
+<td align="left">当在元素上按下鼠标时触发</td>
+<td align="left">在子元素上按下鼠标，事件冒泡到父元素</td>
+</tr>
+<tr>
+<td>onmouseup</td>
+<td align="left">当在元素上按下鼠标松开后触发</td>
+<td align="left">在子元素上松开鼠标，事件会冒泡到父元素</td>
+</tr>
+<tr>
+<td>onmouseenter</td>
+<td align="left">当鼠标移入元素时触发</td>
+<td align="left">正常情况：移入谁触发谁的事件。特殊情况：鼠标一开始就在元素上，那么移动鼠标先触发父元素事件，再触发当前元素事件。</td>
+</tr>
+<tr>
+<td>onmouseover</td>
+<td align="left">当鼠标在元素上时触发</td>
+<td align="left">在子元素上会冒泡到父元素</td>
+</tr>
+<tr>
+<td>onmousemove</td>
+<td align="left">当鼠标在元素上移动时触发</td>
+<td align="left">在子元素上移动会冒泡到父元素</td>
+</tr>
+<tr>
+<td>onmouseleave</td>
+<td align="left">当鼠标移出元素时触发</td>
+<td align="left">移除谁触发谁的事件</td>
+</tr>
+<tr>
+<td>onmouseout</td>
+<td align="left">当鼠标移出元素时触发</td>
+<td align="left">首先鼠标移入父元素，然后继续移入子元素这是会触发一次父元素事件，移出子元素先触发子元素事件，然后触发一次父元素事件，最后移出父元素再触发一次父元素事件</td>
+</tr>
+</tbody></table>
+</li>
+</ol>
+<h2 id="文本标签"><a href="#文本标签" class="headerlink" title="文本标签"></a>文本标签</h2><ol>
+<li>段落标签&lt;p&gt;&lt;/p&gt;，描述一段文字</li>
+<li>标题标签&lt;hx&gt;&lt;/hx&gt;，标题标签用来描述一个标题，标题标签总共有六个级别h1~h6，h1一般每个页面只出现一次</li>
+<li>强调语句标签&lt;em&gt;&lt;/em&gt;，用于强调某些文字的重要性</li>
+<li>更加强调标签&lt;strong&gt;&lt;/strong&gt;，用于强调文本，但它强调的程度更强一些</li>
+<li>无语义标签&lt;span&gt;&lt;/span&gt;</li>
+<li>短文本引用标签&lt;q&gt;&lt;/q&gt;,简短文字的引用</li>
+<li>长文本引用标签&lt;blockquote&gt;&lt;blockquote&gt;，定义长的文本引用</li>
+<li>换行标签&lt;br&gt;</li>
+</ol>
+<h2 id="多媒体标签"><a href="#多媒体标签" class="headerlink" title="多媒体标签"></a>多媒体标签</h2><ol>
+<li>超链接标签&lt;a&gt;&lt;/a&gt;</li>
+<li>图片标签&lt;img /&gt;</li>
+<li>视频标签&lt;video&gt;&lt;/video&gt;</li>
+<li>音频标签&lt;audio&gt;&lt;/audio&gt;</li>
+</ol>
+<h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><ol>
+<li>无序列表&lt;ul&gt;&lt;/ul&gt;</li>
+<li>有序列表&lt;ol&gt;&lt;/ol&gt;</li>
+<li>自定义列表&lt;dl&gt;&lt;/dl&gt;</li>
+</ol>
+<h2 id="列表-1"><a href="#列表-1" class="headerlink" title="列表"></a>列表</h2><ol>
+<li>表格标签&lt;table&gt;&lt;/table&gt;</li>
+<li>表格的一行&lt;tr&gt;&lt;/tr&gt;</li>
+<li>表格的表头&lt;th&gt;&lt;/th&gt;</li>
+<li>单元格&lt;td&gt;&lt;/td&gt;</li>
+<li>合并单元格，同一行内，合并几列colspan=”2”,同一列内，合并几行rowspan=”3”</li>
+<li>cellpadding单元边沿与单元内容之间的空间,cellspacing单元格之间的空白（H5这两个属性均通过css进行设置）</li>
+</ol>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;3&quot;</span>&gt;</span>表头<span class="tag">&lt;/<span class="name">th</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>1<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>2<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>3<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>4<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span>&gt;</span>5<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">tr</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">td</span> <span class="attr">colspan</span>=<span class="string">&quot;3&quot;</span>&gt;</span>6<span class="tag">&lt;/<span class="name">td</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="表单标签"><a href="#表单标签" class="headerlink" title="表单标签"></a>表单标签</h2><ol>
+<li>表单标签&lt;form&gt;&lt;/form&gt;</li>
+<li>输入标签&lt;input&gt;</li>
+</ol>
+<h2 id="网页结构"><a href="#网页结构" class="headerlink" title="网页结构"></a>网页结构</h2><ol>
+<li>&lt;!DOCTYPE html&gt;定义文档类型，告知浏览器用哪一种标准解释HTML</li>
+<li>&lt;html&gt;&lt;html&gt;告知浏览器其自身是一个HTML文档</li>
+<li>&lt;body&gt;&lt;/body&gt;标签之间的内容是网页的主要内容</li>
+<li>&lt;head&gt;&lt;/head&gt;用于定义文档的头部，它是所有头部元素的容器</li>
+<li>&lt;title&gt;&lt;/title&gt;定义文档的标题</li>
+<li>&lt;link&gt;标签将css样式文件链接到HTML文件内</li>
+<li>&lt;meta&gt;定义文档的元数据</li>
+</ol>
+<h2 id="CSS代码语法"><a href="#CSS代码语法" class="headerlink" title="CSS代码语法"></a>CSS代码语法</h2><ol>
+<li>css全称为层叠样式表，它主要用于定义HTML内容在浏览器内的显示样式，如文字大小、颜色、字体加粗等</li>
+<li>css代码通常放在&lt;style&gt;&lt;/style&gt;</li>
+<li>css样式由选择符和声明组成，而声明又由属性和值组成</li>
+<li>选择符{属性：值}</li>
+<li>选择符：又称选择器，指明网页中要应用样式规则的元素</li>
+</ol>
+<h2 id="CSS放置位置"><a href="#CSS放置位置" class="headerlink" title="CSS放置位置"></a>CSS放置位置</h2><ol>
+<li>行内样式，不建议使用</li>
+<li>内联样式表</li>
+<li>外联样式表(需要引入)</li>
+</ol>
+<h2 id="CSS的继承"><a href="#CSS的继承" class="headerlink" title="CSS的继承"></a>CSS的继承</h2><ol>
+<li>css的某些样式具有继承性的，继承是一种规则，它允许样式不仅应用于某个特定html标签元素，而且应用于其后代</li>
+<li>不可继承的样式：dispaly、margin、border、padding、background、height、min-height、max-height、width、min-width、max-width、overflow、position、left、right、top、bottom、z-index、float、clear</li>
+<li>可以继承的样式：color、font-size、font-family、font-weight、text-align、white-space、line-height、visibility</li>
+</ol>
+<h2 id="选择器的种类"><a href="#选择器的种类" class="headerlink" title="选择器的种类"></a>选择器的种类</h2><ol>
+<li>标签选择器：通过标签的名字，修改css样式（p、h1、main、header、span）</li>
+<li>通配符选择器：选择页面中所有的元素（*）</li>
+<li>属性选择器：a[href][title]{color: red;}将同时有href和title属性的HTML超链接的文本设置为红色</li>
+<li>后代选择器：选择某个父元素下面的所有子元素（main&gt;section）</li>
+<li>id选择器：通过id查找页面中唯一的标签（#app）</li>
+<li>class选择器：通过特定的class来查找页面中对应的标签（.app）</li>
+<li>伪类选择器：（:hover、:active、:nth-child()、:nth-of-type()、:last-child）</li>
+<li>伪元素选择器：（::before、::after、::first-letter、::first-line）</li>
+</ol>
+<h2 id="选择器的优先级"><a href="#选择器的优先级" class="headerlink" title="选择器的优先级"></a>选择器的优先级</h2><ol>
+<li>当有不同的选择器同时对一个对象进行样式指定时，并且两个选择器有相同的属性被赋予不同的值时</li>
+<li>计算权重</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th align="left">选择器</th>
+<th>权重</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">*</td>
+<td>0</td>
+</tr>
+<tr>
+<td align="left">标签选择器</td>
+<td>1</td>
+</tr>
+<tr>
+<td align="left">.class</td>
+<td>10</td>
+</tr>
+<tr>
+<td align="left">#id</td>
+<td>100</td>
+</tr>
+<tr>
+<td align="left">style=””</td>
+<td>1000</td>
+</tr>
+<tr>
+<td align="left">!import</td>
+<td>最高</td>
+</tr>
+</tbody></table>
+<h2 id="CSS三大特性总结"><a href="#CSS三大特性总结" class="headerlink" title="CSS三大特性总结"></a>CSS三大特性总结</h2><p>继承性、层叠性、优先级</p>
+<p>子元素可以继承父元素属性，对于相同的属性后设置的属性会覆盖之前设置的属性、权重高的样式覆盖权重低的样式</p>
+<h2 id="背景样式"><a href="#背景样式" class="headerlink" title="背景样式"></a>背景样式</h2><ol>
+<li><p>背景颜色：background-color</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-color</span>: red</span><br></pre></td></tr></table></figure></li>
+<li><p>背景图片：background-image</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-image</span>: <span class="built_in">url</span>(<span class="string">&quot;./bg.jpg&quot;</span>)</span><br></pre></td></tr></table></figure></li>
+<li><p>背景图片位置：background-position</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-position</span>: center center</span><br></pre></td></tr></table></figure></li>
+<li><p>背景图片重复：background-repeat</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-repeat</span>: <span class="built_in">repeat-x</span>(repeat-y、no-repeat)</span><br></pre></td></tr></table></figure></li>
+<li><p>背景图片定位：background-attachment</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-attachment</span>: fixed</span><br></pre></td></tr></table></figure></li>
+<li><p>background缩写</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">background: red url(&quot;.&#x2F;bg.jpg&quot;) no-repeat fixed center</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="字体样式"><a href="#字体样式" class="headerlink" title="字体样式"></a>字体样式</h2><ol>
+<li><p>字体格式font-family</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">font-family</span>: <span class="string">&quot;微软雅黑&quot;</span>,<span class="string">&quot;黑体&quot;</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>字体大小font-size</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">font-size</span>: <span class="number">10px</span> (<span class="number">1rem</span>、<span class="number">1em</span>)</span><br></pre></td></tr></table></figure>
+
+<p><em>网页默认字体大小是16px</em></p>
+</li>
+<li><p>字体粗细font-weight</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">font-weight</span>: <span class="number">700</span>;</span><br><span class="line"></span><br><span class="line"><span class="attribute">normal</span>（默认）</span><br><span class="line">bold（加粗）</span><br><span class="line">bolder（相当于&lt;storng&gt;和&lt;<span class="selector-tag">b</span>&gt;标签）</span><br><span class="line">lighter（常规）</span><br><span class="line">100 ~ 900（400=normal，700=bold）</span><br></pre></td></tr></table></figure></li>
+<li><p>字体颜色color</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">color</span>: <span class="number">#000</span>;</span><br></pre></td></tr></table></figure></li>
+<li><p>字体斜体font-style</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">font-style</span>: italic</span><br><span class="line"></span><br><span class="line">normal  文本正常显示</span><br><span class="line">italic  文本斜体显示</span><br><span class="line">oblique 文本倾斜显示</span><br></pre></td></tr></table></figure></li>
+</ol>
+<h2 id="文本属性"><a href="#文本属性" class="headerlink" title="文本属性"></a>文本属性</h2><ol>
+<li><p>行高line-height</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">line-height</span>: <span class="number">50px</span>;</span><br></pre></td></tr></table></figure>
+
+<p>可以将父元素的高度撑起来</p>
+</li>
+<li><p>文本水平对齐方式text-align</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">text-align</span>: <span class="built_in">left</span>(center、right)</span><br></pre></td></tr></table></figure></li>
+<li><p>文本所在行高的垂直对齐方式vertival-align</p>
+</li>
+<li><p>文本缩进text-indent</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">text-indent</span>: <span class="number">2em</span></span><br></pre></td></tr></table></figure></li>
+<li><p>字母之间的间距 letter-spacing</p>
+</li>
+<li><p>单词之间间距word-spacing</p>
+</li>
+<li><p>文本的大小写text-transform</p>
+</li>
+<li><p>文本的修饰text-decoration</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">none</span> 默认</span><br><span class="line">underline 下划线</span><br><span class="line">overline 上划线</span><br><span class="line">line-through 中线</span><br></pre></td></tr></table></figure></li>
+<li><p>自动换行word-wrap</p>
+</li>
+</ol>
+<h2 id="基本样式"><a href="#基本样式" class="headerlink" title="基本样式"></a>基本样式</h2><ol>
+<li>宽度width</li>
+<li>最大最小宽度max-width、min-width</li>
+<li>高度height</li>
+<li>最大最小高度max-height、min-height</li>
+<li>鼠标样式cursor</li>
+<li>透明度opacity</li>
+<li>可见性visibility</li>
+<li>溢出隐藏overflow</li>
+<li>外边线outline</li>
+</ol>
+<h2 id="样式重置"><a href="#样式重置" class="headerlink" title="样式重置"></a>样式重置</h2><p>早期的网页没有css样式，为了界面美观，很多元素自带marign、padding等样式，但这些样式在不同浏览器解析的值都不一样，需要将css样式重置，保证在不同浏览器显示一致。</p>
+<h2 id="盒模型样式"><a href="#盒模型样式" class="headerlink" title="盒模型样式"></a>盒模型样式</h2><ol>
+<li><p>块级元素、内联元素和内联块级元素</p>
+<p>块级元素</p>
+<ul>
+<li>每个块级元素默认独占一行</li>
+<li>可以设置元素高度、宽度、margin、padding</li>
+</ul>
+<p>行内元素</p>
+<ul>
+<li>元素宽高默认为内容宽高</li>
+<li>不可以设置宽高</li>
+<li>margin和padding只能设置left、right</li>
+<li>一行可以有多个行内元素</li>
+</ul>
+<p>行内块级</p>
+<ul>
+<li>元素宽高默认为内容宽高</li>
+<li>可以设置元素宽、高、margin、padding</li>
+<li>一行可以有多个行内块级元素</li>
+</ul>
+</li>
+<li><p>元素分类转换 display</p>
+<ul>
+<li>block 将元素转换为块级元素</li>
+<li>inline 将元素转换为行内元素</li>
+<li>inline-block 将元素转换为行内块级元素</li>
+<li>none 隐藏元素 并且不占用物理空间</li>
+</ul>
+</li>
+<li><p>描边border</p>
+</li>
+<li><p>间距margin</p>
+</li>
+<li><p>内填充padding</p>
+</li>
+</ol>
+<h2 id="box-sizing"><a href="#box-sizing" class="headerlink" title="box-sizing"></a>box-sizing</h2><ol>
+<li><p>content-box</p>
+<p>盒子宽高为内容宽高，设置border和padding会改变整体元素大小</p>
+</li>
+<li><p>border-box</p>
+<p>盒子宽高为border + padding +内容，改变border和padding会压缩内容</p>
+</li>
+</ol>
+<h2 id="浮动float"><a href="#浮动float" class="headerlink" title="浮动float"></a>浮动float</h2><p>设置float后元素脱离文档流，导致父元素高度坍塌。解决方法开启BFC，最简单的overflow: hedden。或者clear: left，clear: right, clear：both</p>
+<h2 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h2><p>position 几个参数</p>
+<ul>
+<li>static 静态  设置参数都无效</li>
+<li>relative 相对于原来的位置</li>
+<li>absolute 相对于父级元素 父级需要设置position 不然就向上找第一个设置position的元素</li>
+<li>fixed 相对于浏览器窗口</li>
+<li>sticky 粘性定位 到达设定位置变为fixed</li>
+</ul>
+<h2 id="H5新特性"><a href="#H5新特性" class="headerlink" title="H5新特性"></a>H5新特性</h2><ul>
+<li>新的语义标签 header  main  footer  section  article nav</li>
+<li>新的音频标签 audio/video</li>
+<li>新的input type   color  datetime</li>
+<li>localstorage 本地永久存储 只能手动清除</li>
+<li>sessionstorage 会话存储 结束会话自动清除</li>
+</ul>
+<h2 id="CSS3新特性"><a href="#CSS3新特性" class="headerlink" title="CSS3新特性"></a>CSS3新特性</h2><ul>
+<li>transition 过度</li>
+<li>animation 动画</li>
+<li>box-shadow 阴影</li>
+<li>border-image 边框图片</li>
+<li>border-radius 圆角</li>
+<li>tranform 移动变形</li>
+</ul>
+<h1 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h1>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/04/02/%E5%88%9D%E7%BA%A7%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/" data-id="ckn0bnyey0009psvehsrq8076" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2021/04/02/%E9%98%B2%E6%8A%96/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2021/04/02/%E5%8F%98%E9%87%8F%E6%8F%90%E5%8D%87%E3%80%81%E5%87%BD%E6%95%B0%E6%8F%90%E5%8D%87/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/web%E5%89%8D%E7%AB%AF/">web前端</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/" rel="tag">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2-%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%E6%B7%BB%E5%8A%A0/" rel="tag">博客           //多个标签可以这样添加</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2-%E5%A4%9A%E4%B8%AA%E6%A0%87%E7%AD%BE%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%E6%B7%BB%E5%8A%A0/" style="font-size: 10px;">博客           //多个标签可以这样添加</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/04/">April 2021</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2021/03/">March 2021</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2021/04/02/%E4%BD%9C%E7%94%A8%E5%9F%9F%E4%B8%8A%E4%B8%8B%E6%96%87/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/02/%E5%8E%9F%E5%A7%8B%E5%80%BC%E5%BC%95%E7%94%A8%E5%80%BC/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/02/%E9%9D%A2%E8%AF%95%E9%A2%98/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/02/%E5%BC%80%E9%A2%98%E7%AD%94%E8%BE%A9/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2021/04/02/%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2021 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
